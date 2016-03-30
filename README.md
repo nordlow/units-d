@@ -12,7 +12,7 @@ Task List
 
 - [x] Use new template syntax
 
-- [x] Use UFCS when possible
+- [x] Use UFCS
 
 - [x] Use `AliasSeq` inplace of `TypeTuple`
 

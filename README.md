@@ -10,6 +10,8 @@ Task List
 
 - [x] Use new enum syntax
 
+- [x] Use new template syntax
+
 - [x] Use UFCS when possible
 
 - [x] Use `AliasSeq` inplace of `TypeTuple`

@@ -1,0 +1,12 @@
+{
+    "name": "untis-d",
+    "description": "Unit Library and Quantity Library for D.",
+    "homepage": "https://github.com/nordlow/units-d",
+    "license": "Boost",
+    "authors": [
+        "Per Nordlöw"
+    ],
+
+    "sourcePaths": [ "src" ],
+    "importPaths": [ "src" ]
+}

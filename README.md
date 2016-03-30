@@ -37,3 +37,5 @@ instance, Celsius and Fahrenheit.
 
 - [ ] Refactor `GetConversion` to do a breadth-first search instead of current
 depth-first.
+
+Original discussion at: http://forum.dlang.org/thread/io1vgo$1fnc$1@digitalmars.com?page=1

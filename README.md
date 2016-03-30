@@ -39,3 +39,7 @@ instance, Celsius and Fahrenheit.
 depth-first.
 
 Original discussion at: http://forum.dlang.org/thread/io1vgo$1fnc$1@digitalmars.com?page=1
+
+This alternative implementation contains unit expression parsing which might be
+of interest aswell:
+https://github.com/biozic/quantities/issues/2#issuecomment-150809715

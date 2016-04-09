@@ -38,6 +38,9 @@ instance, Celsius and Fahrenheit.
 - [ ] Refactor `GetConversion` to do a breadth-first search instead of current
 depth-first.
 
+- [ ] Find a way to represent sample rate. Use it to infer FFT-frequencies. Add
+  it either here or to `samplerate` or `sampling`.
+
 Original discussion at: http://forum.dlang.org/thread/io1vgo$1fnc$1@digitalmars.com?page=1
 
 This alternative implementation contains unit expression parsing which might be

@@ -118,7 +118,7 @@ import std.typetuple : AliasSeq, allSatisfy, staticMap;
  * different behavior of the conversion function in each module). However,
  * currently it $(I is) possible to create a third unit $(D b) which is
  * convertible to both $(D a) and $(D c), and then perform the conversion in
- * two steps: $(D convert!c(convert!b(1 * a))))
+ * two steps: $(D convert!c(convert!b(1 * a)))
  */
 mixin template UnitImpl()
 {

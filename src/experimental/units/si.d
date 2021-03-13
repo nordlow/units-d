@@ -125,14 +125,14 @@ auto expi(Q)(Q angle)
 ///
 @safe pure nothrow @nogc unittest
 {
-    import std.math : approxEqual;
+    import std.math : isClose;
 
     assert(0.0*radian < 1.0*radian);
     // TODO fix Quantitiy.opCmp to allow: assert(0.0*radian < 1.0*degree);
 
-    assert(approxEqual(cos(0.0*radian), 1));
-    assert(approxEqual(cos(PI*radian), -1));
-    assert(approxEqual(cos(2*PI*radian), 1));
+    assert(isClose(cos(0.0*radian), 1));
+    assert(isClose(cos(PI*radian), -1));
+    assert(isClose(cos(2*PI*radian), 1));
 
     enum d = (180*degree);
     // pragma(msg, d.stringof ~ " : " ~ typeof(d).stringof);
@@ -141,16 +141,16 @@ auto expi(Q)(Q angle)
     // pragma(msg, r.stringof ~ " : " ~ typeof(r).stringof);
 
     // TODO enable when cast in ScaledUnit.{to|from}Base have been removed:
-    // TODO assert(approxEqual(cos(180*degree), -1));
+    // TODO assert(isClose(cos(180*degree), -1));
 
-    assert(approxEqual(sin(0.0*radian), 0));
-    assert(approxEqual(sin(PI*radian), 0));
-    assert(approxEqual(sin(2*PI*radian), 0));
+    assert(isClose(sin(0.0*radian), 0));
+    assert(isClose(sin(PI*radian), 0));
+    assert(isClose(sin(2*PI*radian), 0));
     // TODO enable when cast in ScaledUnit.{to|from}Base have been removed:
-    // TODO assert(approxEqual(sin(360*degree), 0));
-    assert(approxEqual(sin(PI*radian), 0));
+    // TODO assert(isClose(sin(360*degree), 0));
+    assert(isClose(sin(PI*radian), 0));
 
-    // assert(approxEqual(expi(0.0*radian)!0.toValue, 0));
+    // assert(isClose(expi(0.0*radian)!0.toValue, 0));
 }
 
 /**
